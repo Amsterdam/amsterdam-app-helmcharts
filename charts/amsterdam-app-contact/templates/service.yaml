@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "amsterdam-app-contact.fullname" . }}
+  labels:
+    {{- include "amsterdam-app-contact.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "amsterdam-app-contact.selectorLabels" . | nindent 4 }}
