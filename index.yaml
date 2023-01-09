@@ -11,6 +11,17 @@ entries:
     urls:
     - https://github.com/Amsterdam/amsterdam-app-helmcharts/releases/download/amsterdam-app-contact-0.1.0/amsterdam-app-contact-0.1.0.tgz
     version: 0.1.0
+  hello-acr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-09T10:06:36.40781295Z"
+    description: A Helm chart for Kubernetes
+    digest: 9f417f85fee173badc38f886fcbb3fcdaf382063465fceafdd54ef17e33fe001
+    name: hello-acr
+    type: application
+    urls:
+    - https://github.com/Amsterdam/amsterdam-app-helmcharts/releases/download/hello-acr-0.1.0/hello-acr-0.1.0.tgz
+    version: 0.1.0
   helloacrtasks:
   - apiVersion: v2
     appVersion: v1
