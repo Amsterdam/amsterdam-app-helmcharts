@@ -65,6 +65,15 @@ entries:
     version: 1.0.1
   secret-provider-class-library:
   - apiVersion: v2
+    created: "2023-01-30T11:38:59.045837238Z"
+    description: Adds helpful functions to mount secrets on pod start
+    digest: 116b043d077d70ffc4a22c29fb01190e3b1cb67dc1a2a313e1c79eb766a784e8
+    name: secret-provider-class-library
+    type: library
+    urls:
+    - https://github.com/Amsterdam/amsterdam-app-helmcharts/releases/download/secret-provider-class-library-0.5.0/secret-provider-class-library-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     created: "2023-01-30T10:31:48.461707757Z"
     description: Adds helpful functions to mount secrets on pod start
     digest: 2591c82b7263b87970cba389bd93effcbdcced0a7b61f9272c2ddeaafe7398b7
