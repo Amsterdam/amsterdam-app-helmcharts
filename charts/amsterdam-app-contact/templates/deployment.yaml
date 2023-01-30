@@ -55,7 +55,15 @@ spec:
               {{- range .Values.env }}
               - name: {{ .name }}
                 value: {{ .value | quote }}
-              {{- end }}   
+              {{- end }}
+          {{- if .Values.keyVault.enabled }}
+          volumeMounts:
+          {{- include "spc.volumeMounts" . | indend 12 }}
+          {{- end }}
+      {{- if .Values.keyVault.enabled }}
+      volumes:
+      {{- include "spc.volume" . | indent 8 }}
+      {{- end }}                
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
