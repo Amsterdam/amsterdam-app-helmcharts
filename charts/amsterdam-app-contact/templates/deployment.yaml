@@ -41,12 +41,16 @@ spec:
               protocol: TCP
           {{- if .Values.probes.enabled }}
           livenessProbe:
+            initialDelaySeconds: 5
+            timeoutSeconds: 5          
             httpGet:
-              path: /health
+              path: /
               port: http  
           readinessProbe:
+            initialDelaySeconds: 5
+            timeoutSeconds: 5           
             httpGet:
-              path: /ready
+              path: /
               port: http  
           {{- end }}
           resources:
