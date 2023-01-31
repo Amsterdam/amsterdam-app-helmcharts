@@ -56,13 +56,20 @@ spec:
               - name: {{ .name }}
                 value: {{ .value | quote }}
               {{- end }}
-          {{- if .Values.keyVault.enabled }}
+          {{- if .Values.secretProviderClass }}
           volumeMounts:
-          {{- include "spc.volumeMounts" . | indend 12 }}
+            - name: secrets-store01-inline
+              mountPath: "/mnt/secrets-store"
+              readOnly: true
           {{- end }}
-      {{- if .Values.keyVault.enabled }}
+      {{- if .Values.secretProviderClass }}
       volumes:
-      {{- include "spc.volume" . | indent 8 }}
+      - name: secrets-store01-inline
+        csi:
+          driver: secrets-store.csi.k8s.io
+          readOnly: true
+          volumeAttributes:
+            secretProviderClass: {{ .Values.secretProviderClass }}
       {{- end }}                
       {{- with .Values.nodeSelector }}
       nodeSelector:
