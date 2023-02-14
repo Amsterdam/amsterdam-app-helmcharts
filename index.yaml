@@ -3,6 +3,16 @@ entries:
   amsterdam-app-contact:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-02-14T12:35:28.706456831Z"
+    description: The Amsterdam App Contact Helm chart for AKS
+    digest: 14b4886822ca9b8d2e450c7a4b85b425ea2144775bd77c5fb389a78b331009cb
+    name: amsterdam-app-contact
+    type: application
+    urls:
+    - https://github.com/Amsterdam/amsterdam-app-helmcharts/releases/download/amsterdam-app-contact-0.8.0/amsterdam-app-contact-0.8.0.tgz
+    version: 0.8.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-02-09T07:36:12.973811564Z"
     description: The Amsterdam App Contact Helm chart for AKS
     digest: 8aa3321fece1f9c7f20b2d743a4c0644d11790d94485a62fd208a859cb2c38d7
