@@ -103,6 +103,21 @@ entries:
     urls:
     - https://github.com/Amsterdam/amsterdam-app-helmcharts/releases/download/helloacrtasks-1.0.1/helloacrtasks-1.0.1.tgz
     version: 1.0.1
+  locust:
+  - apiVersion: v1
+    appVersion: 1.4.3
+    created: "2023-04-13T13:36:27.00376937Z"
+    description: A chart for locust
+    digest: 0cfb8cd35b283a1a901a6932a4dc408654cc5cb08a93eaa64608050eef81e834
+    home: https://github.com/locustio/locust
+    icon: https://locust.io/static/img/logo.png
+    maintainers:
+    - email: max.williams@deliveryhero.com
+      name: max-rocket-internet
+    name: locust
+    urls:
+    - https://github.com/Amsterdam/amsterdam-app-helmcharts/releases/download/locust-0.9.10/locust-0.9.10.tgz
+    version: 0.9.10
   secret-provider-class-library:
   - apiVersion: v2
     created: "2023-01-30T11:38:59.045837238Z"
