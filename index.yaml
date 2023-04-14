@@ -106,6 +106,20 @@ entries:
   locust:
   - apiVersion: v1
     appVersion: 1.4.3
+    created: "2023-04-14T06:56:54.179559084Z"
+    description: A chart for locust
+    digest: 0cdf22d9d0c3121efb131b863aea181ce51131584c85b6f6185e61980161a51c
+    home: https://github.com/locustio/locust
+    icon: https://locust.io/static/img/logo.png
+    maintainers:
+    - email: max.williams@deliveryhero.com
+      name: max-rocket-internet
+    name: locust
+    urls:
+    - https://github.com/Amsterdam/amsterdam-app-helmcharts/releases/download/locust-0.9.11/locust-0.9.11.tgz
+    version: 0.9.11
+  - apiVersion: v1
+    appVersion: 1.4.3
     created: "2023-04-13T13:36:27.00376937Z"
     description: A chart for locust
     digest: 0cfb8cd35b283a1a901a6932a4dc408654cc5cb08a93eaa64608050eef81e834
